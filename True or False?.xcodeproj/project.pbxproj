@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15370BA7282C58A4008F91A9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 15370BA6282C58A4008F91A9 /* README.md */; };
 		15CF673B27B479B600A97B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CF673A27B479B600A97B4E /* AppDelegate.swift */; };
 		15CF673D27B479B700A97B4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CF673C27B479B700A97B4E /* SceneDelegate.swift */; };
 		15CF673F27B479B700A97B4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CF673E27B479B700A97B4E /* ViewController.swift */; };
 		15CF674227B479B700A97B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CF674027B479B700A97B4E /* Main.storyboard */; };
 		15CF674427B479B900A97B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CF674327B479B900A97B4E /* Assets.xcassets */; };
 		15CF674727B479B900A97B4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CF674527B479B900A97B4E /* LaunchScreen.storyboard */; };
+		15CF674F27B4FCBD00A97B4E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CF674E27B4FCBD00A97B4E /* Question.swift */; };
+		15CF675127B4FD4400A97B4E /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CF675027B4FD4400A97B4E /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		15CF673727B479B600A97B4E /* TrueOrFalseQuizGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueOrFalseQuizGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15370BA6282C58A4008F91A9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		15CF673727B479B600A97B4E /* True or False?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "True or False?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CF673A27B479B600A97B4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15CF673C27B479B700A97B4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		15CF673E27B479B700A97B4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		15CF674327B479B900A97B4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15CF674627B479B900A97B4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15CF674827B479B900A97B4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15CF674E27B4FCBD00A97B4E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		15CF675027B4FD4400A97B4E /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +46,7 @@
 		15CF672E27B479B600A97B4E = {
 			isa = PBXGroup;
 			children = (
+				15370BA6282C58A4008F91A9 /* README.md */,
 				15CF673927B479B600A97B4E /* TrueOrFalseQuizGame */,
 				15CF673827B479B600A97B4E /* Products */,
 			);
@@ -48,7 +55,7 @@
 		15CF673827B479B600A97B4E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15CF673727B479B600A97B4E /* TrueOrFalseQuizGame.app */,
+				15CF673727B479B600A97B4E /* True or False?.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +65,9 @@
 			children = (
 				15CF673A27B479B600A97B4E /* AppDelegate.swift */,
 				15CF673C27B479B700A97B4E /* SceneDelegate.swift */,
-				15CF673E27B479B700A97B4E /* ViewController.swift */,
-				15CF674027B479B700A97B4E /* Main.storyboard */,
+				15CF675227B5022400A97B4E /* Model */,
+				15CF675327B5026900A97B4E /* View */,
+				15CF675427B5028200A97B4E /* Controller */,
 				15CF674327B479B900A97B4E /* Assets.xcassets */,
 				15CF674527B479B900A97B4E /* LaunchScreen.storyboard */,
 				15CF674827B479B900A97B4E /* Info.plist */,
@@ -67,12 +75,37 @@
 			path = TrueOrFalseQuizGame;
 			sourceTree = "<group>";
 		};
+		15CF675227B5022400A97B4E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15CF674E27B4FCBD00A97B4E /* Question.swift */,
+				15CF675027B4FD4400A97B4E /* QuizBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15CF675327B5026900A97B4E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15CF674027B479B700A97B4E /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15CF675427B5028200A97B4E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				15CF673E27B479B700A97B4E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		15CF673627B479B600A97B4E /* TrueOrFalseQuizGame */ = {
+		15CF673627B479B600A97B4E /* True or False? */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 15CF674B27B479B900A97B4E /* Build configuration list for PBXNativeTarget "TrueOrFalseQuizGame" */;
+			buildConfigurationList = 15CF674B27B479B900A97B4E /* Build configuration list for PBXNativeTarget "True or False?" */;
 			buildPhases = (
 				15CF673327B479B600A97B4E /* Sources */,
 				15CF673427B479B600A97B4E /* Frameworks */,
@@ -82,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = TrueOrFalseQuizGame;
+			name = "True or False?";
 			productName = TrueOrFalseQuizGame;
-			productReference = 15CF673727B479B600A97B4E /* TrueOrFalseQuizGame.app */;
+			productReference = 15CF673727B479B600A97B4E /* True or False?.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 15CF673227B479B600A97B4E /* Build configuration list for PBXProject "TrueOrFalseQuizGame" */;
+			buildConfigurationList = 15CF673227B479B600A97B4E /* Build configuration list for PBXProject "True or False?" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				15CF673627B479B600A97B4E /* TrueOrFalseQuizGame */,
+				15CF673627B479B600A97B4E /* True or False? */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15370BA7282C58A4008F91A9 /* README.md in Resources */,
 				15CF674727B479B900A97B4E /* LaunchScreen.storyboard in Resources */,
 				15CF674427B479B900A97B4E /* Assets.xcassets in Resources */,
 				15CF674227B479B700A97B4E /* Main.storyboard in Resources */,
@@ -138,7 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15CF675127B4FD4400A97B4E /* QuizBrain.swift in Sources */,
 				15CF673F27B479B700A97B4E /* ViewController.swift in Sources */,
+				15CF674F27B4FCBD00A97B4E /* Question.swift in Sources */,
 				15CF673B27B479B600A97B4E /* AppDelegate.swift in Sources */,
 				15CF673D27B479B700A97B4E /* SceneDelegate.swift in Sources */,
 			);
@@ -295,6 +331,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,6 +360,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -341,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		15CF673227B479B600A97B4E /* Build configuration list for PBXProject "TrueOrFalseQuizGame" */ = {
+		15CF673227B479B600A97B4E /* Build configuration list for PBXProject "True or False?" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15CF674927B479B900A97B4E /* Debug */,
@@ -350,7 +388,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		15CF674B27B479B900A97B4E /* Build configuration list for PBXNativeTarget "TrueOrFalseQuizGame" */ = {
+		15CF674B27B479B900A97B4E /* Build configuration list for PBXNativeTarget "True or False?" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				15CF674C27B479B900A97B4E /* Debug */,
